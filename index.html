@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
   li {
     list-style: none;
@@ -36,7 +40,13 @@
     background-color: #f6f6f6;
     background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
   }
+  footer {
+    background-color: #f6f6f6;
+    background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
 
+  }
+
+  
 
 
 
@@ -78,7 +88,7 @@
               </li>
               <!-- Videos -->
               <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Videos</a>
             </li>
               <!-- About Us -->
               <li class="nav-item">
@@ -96,6 +106,7 @@
             </ul>
           </div>    
       </div>
+      <!-- Search bar -->
       <div class="ms-5">
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -106,12 +117,12 @@
   </header>
   <main>
     <!-- Cover Video -->
-    <video class="w-100" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <video class="w-100 % d-flex align-content-center" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="./Gallery/Prepare_food_AdobeExpress.mp4" type="video/mp4">
     </video>
     <h4 class="d-flex justify-content-center m-4" style="font-family: cursive;">Scrumptious Recipes</h4>
     <!-- Carousel -->
-    <div class="row">
+    <div class="row h-50">
       <div class="owl-carousel owl-theme">
         <div class="item mb-2">
           <div class="card border-0 shadow">
@@ -171,6 +182,74 @@
       </div>  
     </div>      
   </main>
+  <footer class="footer">
+    <div class="container"> 
+      <div class="row">
+        <div class="col-md-2">
+          <h6 class="d-flex justify-content-center">Explore</h6>
+          <hr/>
+          <ul class="text-secondary">
+            <li>
+              <a href="#" class="nav-link">Explore</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Meat</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Fish</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Pasta</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Salad</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Sweets</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+        <h6 class="d-flex justify-content-center">Videos</h6>
+        <hr/>
+        <ul class="text-secondary">
+          <li>
+            <a href="#" class="nav-link">Video Recipes</a>
+          </li>
+        </ul>
+      </div>
+        <div class="col-md-2">
+        <h6 class="d-flex justify-content-center">About Us</h6>
+        <hr/>
+        <ul class="text-secondary">
+          <li>
+            <a href="#" class="nav-link">About Baneknek</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Meet our team</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">FAQ</a>
+          </li>
+        </ul>
+      </div>
+        <div class="col-md-3 d-flex align-items-center">
+          <h2>Chasing<span class="umami">Umami.</span></h2>
+        <img src="./Gallery/InYour.png" alt="" width="80" height="80"/>
+      </div>
+      <div class="w-25"> 
+        <ul class="d-flex justify-content-between p-2">
+            <li class="icon nav-item"><a href="https://www.facebook.com/profile.php?id=100093383017171"><i class="fa-brands fa-facebook" style="color: #2a2826;"></i></a></li>
+            <li class="icon nav-item"><a href="https://twitter.com/TheBaneknek19"><i class="fa-brands fa-twitter" style="color: #2a2826;"></i></a></li>
+            <li class="icon nav-item"><a href="https://www.linkedin.com/in/ma-nikki-zapuiz-ab956799/"><i class="fa-brands fa-linkedin-in" style="color: #2a2826;"></i></a></li>
+            <li class="icon nav-item"><a href="https://www.instagram.com/travelblogsix6/"><i class="fa-brands fa-instagram" style="color: #2a2826;"></i></a></li>
+        </ul>
+      </div>   
+      <hr/>
+      <p class="d-flex justify-content-center">© 2023 Chasing Umami. | All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Owl Carousel -->

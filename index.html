@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chasing Umami-Home</title>
+    <!-- Favicon -->
     <link rel="icon" type="images/x-icon" href="./Gallery/favicon-32x32.png"/>
+    <!-- Bootstrap Min.css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <!-- Owl Carousel Min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Owl Carousel Theme Min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
 
@@ -15,23 +21,10 @@
     list-style: none;
   }
 
-  h5 {
-    text-shadow: #f6f8fa;
-  }
-
+ 
   .umami {
     color:#578d37 ;
 
-  }
-
-  .carousel-inner h5 {
-    background-color: #474849;
-    opacity: 50%;
-  }
-  
-  .carousel-inner p {
-    background-color: #474849;
-    opacity: 50%;
   }
 
   header {
@@ -50,12 +43,12 @@
 </style>
 
 <body>
-  <header class="d-flex justify-content-center" style="height: 8vw;">
+  <header class="d-flex justify-content-center">
     <nav class="navbar navbar-expand-lg">
       <a href="#" class="navbar-brand p-2">
         <img src="./Gallery/InYour.png" alt="umami-logo" width="110" height="80"/>
         <h5 class="chasingumami">
-          Chasing<span class="umami" style="text-decoration: underline text;">Umami.</span>
+          Chasing<span class="umami">Umami.</span>
         </h5>
       </a>
       <button class="navbar-toggler" navbar-expand-lg type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,9 +56,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
+            <!-- Home -->
             <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
             </li>
+            <!-- category -->
             <li class="nav-item">
                 <div class="dropdown">
                   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,6 +73,7 @@
                   </ul>
                 </div>
             </li>
+            <!-- Videos -->
             <li class="nav-item">
               <div class="dropdown">
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -90,32 +86,114 @@
                 </ul>
               </div>    
             </li>
+            <!-- About Us -->
             <li class="nav-item">
               <div class="dropdown">
-                <button class="btn dropdown-toggle d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   About Us
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">What we do?</a></li>
-                  <li><a class="dropdown-item" href="#">Why learn to cook?</a></li>
                   <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="#">jdsjf</a></li>
+                  <li><a class="dropdown-item" href="#">fdgfd</a></li>
                 </ul>
-              </div>
+              </div>    
             </li>
           </ul>
         </div>    
      </nav>
   </header>
   <main>
-    <video class="w-100 h-5" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <!-- Cover Video -->
+    <video class="w-100" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="./Gallery/Prepare_food_AdobeExpress.mp4" type="video/mp4">
     </video>
-    <h3 class="d-flex justify-content-center pt-5" style="font-family: cursive;">Scrumptious Recipes</h3>
-    <div class="container">
-       
-    </div>
+    <h4 class="d-flex justify-content-center m-4" style="font-family: cursive;">Scrumptious Recipes</h4>
+    <!-- Carousel -->
+    <div class="row">
+      <div class="owl-carousel owl-theme">
+        <div class="item mb-2">
+          <div class="card border-0 shadow">
+            <a href="#">
+              <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
+            </a>
+            <div class="card-body">
+              <h4>Chicken Alfredo</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Item end -->
+        <div class="item mb-2">
+          <div class="card border-0 shadow">
+            <a href="#">
+              <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
+            </a>
+            <div class="card-body">
+              <h4>Chicken Asparagus</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Item end -->
+        <div class="item mb-2">
+          <div class="card border-0 shadow">
+            <a href="#">
+              <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
+            </a>
+            <div class="card-body">
+              <h4>Chicken Eme</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Item end -->
+        <div class="item mb-2">
+          <div class="card border-0 shadow">
+            <a href="#">
+              <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
+            </a>
+            <div class="card-body">
+              <h4>Pork eme</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Item end -->
+        <div class="item mb-2">
+          <div class="card border-0 shadow">
+            <a href="#">
+              <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
+            </a>
+            <div class="card-body">
+              <h4>kinenelin</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Item end -->
+      </div>  
+    </div>      
   </main>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>   
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>   
+  <!-- Init Owl Carousel -->
+  <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:3
+          }
+      }
+    })
+  </script>
 </body>
 </html>

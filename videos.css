@@ -3,11 +3,11 @@
     padding: 0;
 }
 body {
-    background: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);;
+    background: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
 }
 .container {
     width: 80%;
-    margin: 80px;
+    margin: 80px auto;
 }
 .container h3 {
     padding: 60px 0;
@@ -25,4 +25,21 @@ body {
     flex-basis: 50%;
     min-width: 250px;
 
+}
+
+feature-img {
+    width: 83%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.small-img-row {
+    display: flex;
+    background: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 85%;
 }

@@ -15,6 +15,7 @@
     <!-- Owl Carousel Theme Min.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<!-- style -->
 <style>
   * {
     margin: 0;
@@ -25,7 +26,6 @@
     list-style: none;
   }
 
- 
   .umami {
     color:#578d37 ;
 
@@ -36,27 +36,28 @@
     background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
   }
 
+  .dropdown-menu {
+    border: 0;
+    background-color: #f6f6f6;
+    background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+  }
+
   body {
     background-color: #f6f6f6;
     background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
   }
+
   footer {
     background-color: #f6f6f6;
     background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
-
   }
-
-  
-
-
-
 </style>
 
 <body>
-  <header class="d-flex justify-content-center">
+  <header class="d-flex justify-content-center h-25">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a href="#" class="navbar-brand p-2">
+        <a href="#" class="navbar-brand mb-5">
           <img src="./Gallery/InYour.png" alt="umami-logo" width="110" height="80"/>
           <h5 class="chasingumami">
             Chasing<span class="umami">Umami.</span>
@@ -69,124 +70,122 @@
             <ul class="navbar-nav">
               <!-- Home -->
               <li class="nav-item">
-                  <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
               </li>
               <!-- category -->
               <li class="nav-item">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Explore
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Meat</a></li>
-                      <li><a class="dropdown-item" href="#">Pasta</a></li>
-                      <li><a class="dropdown-item" href="#">Sweets</a></li>
-                      <li><a class="dropdown-item" href="#">Fish</a></li>
-                      <li><a class="dropdown-item" href="#">Salads</a></li>
-                    </ul>
-                  </div>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Explore
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Meat</a></li>
+                    <li><a class="dropdown-item" href="#">Pasta</a></li>
+                    <li><a class="dropdown-item" href="#">Sweets</a></li>
+                    <li><a class="dropdown-item" href="#">Fish</a></li>
+                    <li><a class="dropdown-item" href="#">Salads</a></li>
+                  </ul>
+                </div>
               </li>
               <!-- Videos -->
               <li class="nav-item">
-                <a href="index.html" class="nav-link">Videos</a>
+                <a href="videos.html" class="nav-link">Videos</a>
             </li>
               <!-- About Us -->
               <li class="nav-item">
-                <div class="dropdown">
-                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    About Us
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                    <li><a class="dropdown-item" href="#">jdsjf</a></li>
-                    <li><a class="dropdown-item" href="#">fdgfd</a></li>
-                  </ul>
-                </div>    
+                <a href="About-Us.html" class="nav-link">About Us</a>
               </li>
             </ul>
-          </div>    
-      </div>
-      <!-- Search bar -->
-      <div class="ms-5">
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+            <!-- Search bar -->
+            <nav class="navbar">
+              <div class="container-fluid">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn umami" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+        </div>    
       </div>
      </nav>
   </header>
   <main>
     <!-- Cover Video -->
-    <video class="w-100 % d-flex align-content-center" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="./Gallery/Prepare_food_AdobeExpress.mp4" type="video/mp4">
+    <video class="w-100 d-flex align-content-center" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="./Gallery/pexels-cottonbro-studio-3338747-4096x2160-50fps.mp4" type="video/mp4">
     </video>
-    <h4 class="d-flex justify-content-center m-4" style="font-family: cursive;">Scrumptious Recipes</h4>
+    <h5 class="d-flex justify-content-center divider m-4" style="font-family: cursive;">
+      Scrumptious&nbsp;<span class="umami">Recipes</span>
+    </h5>
     <!-- Carousel -->
-    <div class="row h-50">
-      <div class="owl-carousel owl-theme">
-        <div class="item mb-2">
-          <div class="card border-0 shadow">
-            <a href="#">
-              <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
-            </a>
-            <div class="card-body">
-              <h4>Chicken Alfredo</h4>
+    <div class="carousel">
+      <div class="row">
+        <div class="owl-carousel owl-theme">
+          <div class="item mb-2">
+            <div class="card border-0 shadow">
+              <a href="#">
+                <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
+              </a>
+              <div class="card-body">
+                <h4>Chicken Alfredo</h4>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Item end -->
-        <div class="item mb-2">
-          <div class="card border-0 shadow">
-            <a href="#">
-              <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
-            </a>
-            <div class="card-body">
-              <h4>Chicken Asparagus</h4>
+          <!-- Item end -->
+          <div class="item mb-2">
+            <div class="card border-0 shadow">
+              <a href="#">
+                <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
+              </a>
+              <div class="card-body">
+                <h4>Chicken Asparagus</h4>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Item end -->
-        <div class="item mb-2">
-          <div class="card border-0 shadow">
-            <a href="#">
-              <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
-            </a>
-            <div class="card-body">
-              <h4>Chicken Eme</h4>
+          <!-- Item end -->
+          <div class="item mb-2">
+            <div class="card border-0 shadow">
+              <a href="#">
+                <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
+              </a>
+              <div class="card-body">
+                <h4>Chicken Eme</h4>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Item end -->
-        <div class="item mb-2">
-          <div class="card border-0 shadow">
-            <a href="#">
-              <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
-            </a>
-            <div class="card-body">
-              <h4>Pork eme</h4>
+          <!-- Item end -->
+          <div class="item mb-2">
+            <div class="card border-0 shadow">
+              <a href="#">
+                <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
+              </a>
+              <div class="card-body">
+                <h4>Pork eme</h4>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Item end -->
-        <div class="item mb-2">
-          <div class="card border-0 shadow">
-            <a href="#">
-              <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
-            </a>
-            <div class="card-body">
-              <h4>kinenelin</h4>
+          <!-- Item end -->
+          <div class="item mb-2">
+            <div class="card border-0 shadow">
+              <a href="#">
+                <img src="./Gallery/Chicken Asparagus.jpg" alt="image" class="card-img-top"/>
+              </a>
+              <div class="card-body">
+                <h4>kinenelin</h4>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Item end -->
-      </div>  
-    </div>      
+          <!-- Item end -->
+        </div>  
+      </div>       
+    </div>
   </main>
   <footer class="footer">
+    <!-- footer nav -->
     <div class="container"> 
       <div class="row">
         <div class="col-md-2">
-          <h6 class="d-flex justify-content-center">Explore</h6>
+          <h6 class="d-flex justify-content-center"><a href="#">Explore</a></h6>
           <hr/>
           <ul class="text-secondary">
             <li>
@@ -209,46 +208,40 @@
             </li>
           </ul>
         </div>
+        <!-- end -->
         <div class="col-md-2">
-        <h6 class="d-flex justify-content-center">Videos</h6>
+        <h6 class="d-flex justify-content-center"><a href="videos.html">Videos</a></h6>
         <hr/>
         <ul class="text-secondary">
           <li>
             <a href="#" class="nav-link">Video Recipes</a>
           </li>
         </ul>
-      </div>
+        </div>
+        <!-- end -->
         <div class="col-md-2">
-        <h6 class="d-flex justify-content-center">About Us</h6>
-        <hr/>
-        <ul class="text-secondary">
-          <li>
-            <a href="#" class="nav-link">About Baneknek</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">Meet our team</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">FAQ</a>
-          </li>
-        </ul>
-      </div>
-        <div class="col-md-3 d-flex align-items-center">
+          <h6 class="d-flex justify-content-center"><a href="About-Us.html">About Us</a></h6>
+          <hr/>
+        </div>
+        <!-- end -->
+        <div class="col-md-3">
+          <img src="./Gallery/InYour.png" alt="" width="120" height="90"/>
+          <br/>
           <h2>Chasing<span class="umami">Umami.</span></h2>
-        <img src="./Gallery/InYour.png" alt="" width="80" height="80"/>
+        </div>
+        <div class="col-md-3"> 
+          <ul class="d-flex justify-content-between p-5">
+              <li class="icon nav-item"><a href="https://www.facebook.com/profile.php?id=100093383017171"><i class="fa-brands fa-facebook" style="color: #2a2826;"></i></a></li>
+              <li class="icon nav-item"><a href="https://twitter.com/TheBaneknek19"><i class="fa-brands fa-twitter" style="color: #2a2826;"></i></a></li>
+              <li class="icon nav-item"><a href="https://www.linkedin.com/in/ma-nikki-zapuiz-ab956799/"><i class="fa-brands fa-linkedin-in" style="color: #2a2826;"></i></a></li>
+              <li class="icon nav-item"><a href="https://www.instagram.com/travelblogsix6/"><i class="fa-brands fa-instagram" style="color: #2a2826;"></i></a></li>
+          </ul>
+        </div>
+        <!-- end -->
+        <hr/>
+        <p class="d-flex justify-content-center">© 2023 Chasing Umami. | All rights reserved.</p>
       </div>
-      <div class="w-25"> 
-        <ul class="d-flex justify-content-between p-2">
-            <li class="icon nav-item"><a href="https://www.facebook.com/profile.php?id=100093383017171"><i class="fa-brands fa-facebook" style="color: #2a2826;"></i></a></li>
-            <li class="icon nav-item"><a href="https://twitter.com/TheBaneknek19"><i class="fa-brands fa-twitter" style="color: #2a2826;"></i></a></li>
-            <li class="icon nav-item"><a href="https://www.linkedin.com/in/ma-nikki-zapuiz-ab956799/"><i class="fa-brands fa-linkedin-in" style="color: #2a2826;"></i></a></li>
-            <li class="icon nav-item"><a href="https://www.instagram.com/travelblogsix6/"><i class="fa-brands fa-instagram" style="color: #2a2826;"></i></a></li>
-        </ul>
-      </div>   
-      <hr/>
-      <p class="d-flex justify-content-center">© 2023 Chasing Umami. | All rights reserved.</p>
-      </div>
-    </div>
+    </div>    
   </footer>
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

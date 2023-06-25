@@ -145,8 +145,8 @@
                         width="530vw">
                     <p class="p-4 mt-3">
                         Main Course |<span class="umami"> 30-Minutes</span>
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         Chicken Alfredo is a classic and delicious dish that combines tender chicken, creamy Alfredo
                         sauce, and perfectly cooked pasta. Here's an introduction to the recipe instructions for Chicken
                         Alfredo:
@@ -218,9 +218,9 @@
                 </div>
                 <!-- Contact Us -->
                 <div class="col-md-3 mt-5">
-                    <div>
-                        <h5 class="d-flex justify-content-center">Contact<span class="umami">Us</span></h5>
-                        <ul class="contacts shadow mt-3 pt-3">
+                    <div class="shadow pt-4">
+                        <h5 class="d-flex justify-content-center">Contact <span class="umami">Us</span></h5>
+                        <ul class="contacts mt-3 pt-3">
                             <li>
                                 <a href="#" style="text-decoration: none;"><span
                                         style="color: #2a2826;">chasingumami</span><span
@@ -341,6 +341,37 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                    <!--container -->
+                    <div class="container mt-5 py-4 shadow ">
+                        <!--form -->
+                        <form id="contactForm">
+                            <h5 class="text-center mb-5">Leave your <span class="umami">Suggestions</span></h5>
+                            <!-- Name input -->
+                            <div class="mb-3">
+                                <label class="form-label" for="name">Name</label>
+                                <input class="form-control" id="name" type="text" placeholder="Name"
+                                    data-sb-validations="required" />
+                            </div>
+                            <!-- Email address input -->
+                            <div class="mb-3">
+                                <label class="form-label" for="emailAddress">Email Address</label>
+                                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address"
+                                    data-sb-validations="required, email" />
+                            </div>
+                            <!-- Message input -->
+                            <div class="mb-3">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea class="form-control" id="message" type="text" placeholder="Message"
+                                    style="height: 10rem;" data-sb-validations="required"></textarea>
+                            </div>
+                            <!-- Form submit button -->
+                            <div class="d-grid">
+                                <button class="btn umami btn-lg" type="submit">Submit</button>
+                            </div>
+
+                        </form>
+
                     </div>
                     <br />
                     <br />
